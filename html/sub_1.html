@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> 식품소비기한 </title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="../css/sub_1.css" />
+</head>
+<body>
+
+		<!-- s: header -->
+	<div id="main">
+		<div id="main">
+		<img src="../images_sub_1/main.png">
+	</div>
+
+	<header id="header_nav">
+		<div class="header_inner">
+			<h1><a href="../html/main.html"><img src="../images_sub_4/logo.png" onmouseover="this.src='../images_sub_4/logo_on.png'"onmouseout="this.src='../images_sub_4/logo.png'"/></a></h1>
+			<nav class="menu">
+				<ul class="amen">
+					<li class="current"><a href="../html/sub_1.html">식품소비기한</a></li>
+					<li><a href="../html/sub_2-1.html">식품재활용</a></li>
+					<li><a href="../html/sub_3.html">식품표기제도</a></li>
+					<li><a href="../html/sub_4.html">수입식품표기법</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js">	</script>
+		<script type="text/javascript">
+			$(function () {
+			    var lastScrollTop = 0,
+			        delta = 15;
+			    $(window).scroll(function (event) {
+			        var st = $(this).scrollTop();
+			        if (Math.abs(lastScrollTop - st) <= delta) return;
+			        if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+			            $("#header_nav").css("top", "-90px");
+			        } else {
+			            $("#header_nav").css("top", "0px");
+			        }
+			        lastScrollTop = st;
+			    });
+			});  
+		</script>
+
+
+		<div id="bg"></div>
+
+		<div>
+			<span id="innerwidth" class="point-in"></span>
+			<span id="innerheight" class="point-in"></span>
+		</div>
+
+
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				//When page loads...
+				$(".tab_content").hide(); //Hide all content
+				$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+				$(".tab_content:first").show(); //Show first tab content
+
+				//On Click Event
+				$("ul.tabs li").click(function() {
+
+					$("ul.tabs li").removeClass("active"); //Remove any "active" class
+					$(this).addClass("active"); //Add "active" class to selected tab
+					$(".tab_content").hide(); //Hide all tab content
+
+					var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+					$(activeTab).fadeIn(); //Fade in the active ID content
+					return false;
+				});
+
+			});
+		</script>
+
+	</header>
+	<!-- e: header -->
+	
+
+	<div id="body_container">
+
+	    <div class="intro">
+			<h1>식품 소비기한</h1>
+			<p>유통기한이 지난 식품은 바로 쓰레기통에 버려야 할까요?<br>
+			음식을 섭취할 수 있다는 기간을 나타내는 '소비기한'을 식품별로 알아두는 것이 중요합니다.<br>
+			소비기한이 적용되는 것은 두 가지 전제 조건을 필요로 하는데, 먼저 제품의 포장을 뜯지 않은 상태여야 하며<br>
+			제품의 보관 요령을 잘 지켜야 소비기한 동안 섭취가 가능합니다. 올바른 보관 방법도 숙지해야 합니다.</p>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+		<script type="text/javascript">
+			$(".tab_u").click(function(){
+			  $("milk").hide();
+			});
+
+			$("tab_u").click(function(){
+			  $("milk").show();
+			});
+		</script>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" >
+			$(function(){
+				$('box').on('click', function(){
+					$(this).toggleClass('on');
+					});
+				});
+
+			function change1(){
+				var tap0 = document.getElementById("tap_bottom_01");
+				var tap = document.getElementById("tap_bottom_02");
+				var tap1 = document.getElementById("tap_bottom_03");
+
+				document.getElementById("show_1").src = "../images_sub_1/milk_b.png";
+				$(".milk").html('');
+				$(".milk_1").html("<h1>우유</h1><p>소비기한 : 45일<br>보관방법 : 냉장보관</p>");
+ 				tap.style.border ="none";
+ 				tap1.style.border="none"; 
+			}
+
+			function change2(){
+				document.getElementById("show_1").src = "../images_sub_1/cheese_b.png";
+				$(".milk").html('');
+				$(".milk_1").html("<h1>치즈</h1><p>소비기한 : 70일<br>보관방법 : 냉장보관</p>");
+			}
+
+			function change3(){
+				document.getElementById("show_1").src = "../images_sub_1/yogurt_b.png";
+				$(".milk").html('');
+				$(".milk_1").html("<h1>요거트</h1><p>소비기한 : 10일<br>보관방법 : 냉장보관</p>");
+			}
+
+			function change4(){
+				document.getElementById("show_2").src = "../images_sub_1/sik_b.png";
+				$(".milk").html('');
+				$(".milk_2").html("<h1>식빵</h1><p>소비기한 : 18일<br>보관방법 : 냉장보관</p>");
+			}
+
+			function change5(){
+				document.getElementById("show_2").src = "../images_sub_1/cake_b.png";
+				$(".milk").html('');
+				$(".milk_2").html("<h1>케이크</h1><p>소비기한 : 2일<br>보관방법 : 냉장보관</p>");
+			}
+
+			function change6(){
+				document.getElementById("show_2").src = "../images_sub_1/cream_b.png";
+				$(".milk").html('');
+				$(".milk_2").html("<h1>크림빵</h1><p>소비기한 : 2일<br>보관방법 : 냉장보관</p>");
+			}
+
+
+			function change7(){
+				document.getElementById("show_3").src = "../images_sub_1/ketchup_b.png";
+				$(".milk").html('');
+				$(".milk_3").html("<h1>케첩</h1><p>소비기한 : 1년<br>보관방법 : 냉장보관</p>");
+			}
+
+			function change8(){
+				document.getElementById("show_3").src = "../images_sub_1/mayo_b.png";
+				$(".milk").html('');
+				$(".milk_3").html("<h1>마요네즈</h1><p>소비기한 : 4개월<br>보관방법 : 냉장보관</p>");
+			}
+
+			function change9(){
+				document.getElementById("show_3").src = "../images_sub_1/sikcho_b.png";
+				$(".milk").html('');
+				$(".milk_3").html("<h1>식초</h1><p>소비기한 : 반영구<br>보관방법 : 서늘한 곳에 보관</p>");
+			}
+
+			function change10(){
+				document.getElementById("show_4").src = "../images_sub_1/ham_b.png";
+				$(".milk").html('');
+				$(".milk_4").html("<h1>햄</h1><p>소비기한 : 4개월<br>보관방법 : 냉동보관</p>");
+			}
+
+			function change11(){
+				document.getElementById("show_4").src = "../images_sub_1/can_b.png";
+				$(".milk").html('');
+				$(".milk_4").html("<h1>참치캔</h1><p>소비기한 : 10년 이상<br>보관방법 : 서늘한 곳에 보관</p>");
+			}
+
+			function change12(){
+				document.getElementById("show_4").src = "../images_sub_1/sam_b.png";
+				$(".milk").html('');
+				$(".milk_4").html("<h1>가공육</h1><p>소비기한 : 2주<br>보관방법 : 냉장보관</p>");
+			}
+		</script>
+
+
+
+<div id="wrapper">	
+	<!--탭 메뉴 영역 -->
+	<ul class="tabs">
+	    <li><a href="#tab1">유제품류</a></li>
+	    <li><a href="#tab2">빵류</a></li>
+	    <li><a href="#tab3">소스류</a></li>
+	    <li><a href="#tab4">육류</a></li>
+	</ul>
+
+	<!--탭 콘텐츠 영역 -->
+	<div class="tab_container">
+
+	    <div id="tab1" class="tab_content">
+	        <!--Content-->
+	        <div class="milk_1">
+				<h1>우유</h1>
+				<p>소비기한 : 45일<br>
+				보관방법 : 냉장보관</p>
+			</div>
+
+			<div class="tab_bottom">
+ 				<img class="tap_bottom_01" src="../images_sub_1/milk_s.png" onclick="change1()" />
+				<img class="tap_bottom_02" src="../images_sub_1/cheese_s.png" onclick="change2()"/>
+				<img class="tap_bottom_03" src="../images_sub_1/yogurt_s.png" onclick="change3()"/>	    
+			</div>
+
+			<div class="name_milk">
+				<h1 class>우유</h1>
+			</div>
+			<div class="name_cheese">
+				<h1 class>치즈</h1>
+			</div>
+			<div class="name_yogurt">
+				<h1 class>요거트</h1>
+			</div>
+			<div class="right">
+				<img class="example_milk" src="../images_sub_1/milk_b.png" id="show_1"/>
+			</div>
+
+		</div>
+
+
+	    <div id="tab2" class="tab_content">
+	       <!--Content-->
+	        <div class="milk_2">
+				<h1>식빵</h1>
+				<p>소비기한 : 18일<br>
+				보관방법 : 냉장보관</p>
+			</div>
+			<div class="tab_bottom">
+				<img class="tap_bottom_01" src="../images_sub_1/sik_s.png" onclick="change4()">
+				<img class="tap_bottom_02" src="../images_sub_1/cake_s.png" onclick="change5()">
+				<img class="tap_bottom_03" src="../images_sub_1/cream_s.png" onclick="change6()">	    
+			</div>
+ 
+
+
+			<div class="name_sik">
+				<h1 class>식빵</h1>
+			</div>
+			<div class="name_cake">
+				<h1 class>케이크</h1>
+			</div>
+			<div class="name_cream">
+				<h1 class>크림빵</h1>
+			</div>
+
+
+			<div class="right">
+				<img class="example_sik" src="../images_sub_1/sik_b.png" id="show_2">
+			</div>
+		</div>
+
+	    <div id="tab3" class="tab_content">
+	       <!--Content-->
+	        <div class="milk_3">
+				<h1>케첩</h1>
+				<p>소비기한 : 1년<br>
+				보관방법 : 냉장보관</p>
+			</div>
+
+			<div class="tab_bottom">
+				<img class="tap_bottom_01" src="../images_sub_1/ketchup_s.png" onclick="change7()">
+				<img class="tap_bottom_02" src="../images_sub_1/mayo_s.png" onclick="change8()">
+				<img class="tap_bottom_03" src="../images_sub_1/sikcho_s.png" onclick="change9()">	    
+			</div>
+
+			<div class="name_ketchup">
+				<h1 class>케첩</h1>
+			</div>
+			<div class="name_mayo">
+				<h1 class>마요네즈</h1>
+			</div>
+			<div class="name_sikcho">
+				<h1 class>식초</h1>
+			</div>
+
+			<div class="right">
+				<img class="example_ketchup" src="../images_sub_1/ketchup_b.png" id="show_3">
+			</div>
+		</div>
+
+	    <div id="tab4" class="tab_content">
+	       <!--Content-->
+	        <div class="milk_4">
+				<h1>햄</h1>
+				<p>소비기한 : 4개월<br>
+				보관방법 : 냉동보관</p>
+			</div>
+
+			<div class="tab_bottom">
+				<img class="tap_bottom_01" src="../images_sub_1/ham_s.png" onclick="change10()">
+				<img class="tap_bottom_02" src="../images_sub_1/can_s.png" onclick="change11()">
+				<img class="tap_bottom_03" src="../images_sub_1/sam_s.png" onclick="change12()">	    
+			</div>
+
+			<div class="name_ham">
+				<h1 class>햄</h1>
+			</div>
+			<div class="name_can">
+				<h1 class>참치캔</h1>
+			</div>
+			<div class="name_sam">
+				<h1 class>가공육</h1>
+			</div>
+
+			<div class="right">
+				<img class="example_ham" src="../images_sub_1/ham_b.png" width="550" height="550" id="show_4">
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+		<!-- s: footer -->
+	<footer id="footer_nav">
+		<div class="footer_inner">
+			<div class="footer_png">
+				<div class="facebook"><img src="../images_sub_3/facebook.png" onmouseover="this.src='../images_sub_3/facebook_on.png'"onmouseout="this.src='../images_sub_3/facebook.png'"/></div>
+				<div class="insta"><img src="../images_sub_3/insta.png" onmouseover="this.src='../images_sub_3/insta_on.png'"onmouseout="this.src='../images_sub_3/insta.png'"/></div>
+				<div class="twi"><img src="../images_sub_3/twi.png" onmouseover="this.src='../images_sub_3/twi_on.png'"onmouseout="this.src='../images_sub_3/twi.png'"/></div>
+				<div class="in"><img src="../images_sub_3/in.png" onmouseover="this.src='../images_sub_3/in_on.png'"onmouseout="this.src='../images_sub_3/in.png'"/></div> 
+			</div>
+			<p>© UBD, All Rights Reserved</p>
+		</div>
+
+		<div>
+			<span id="innerwidth" class="point-in"></span>
+			<span id="innerheight" class="point-in"></span>
+		</div>
+
+	</footer>
+		<!-- e: footer -->
+
+
+
+</body>	
+</html>

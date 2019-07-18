@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> 수입식품표기 </title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"/>
+	<link type="text/css" rel="stylesheet" href="../css/sub_4.css" />
+</head>
+<body>
+
+		<!-- s: header -->
+	<div id="main">
+		<div id="j_o_main_image">
+		<img src="../images_sub_4/main.png">
+	</div>
+
+	<header id="header_nav">
+		<div class="header_inner">
+			<h1><a href="../html/main.html"><img src="../images_sub_4/logo.png" onmouseover="this.src='../images_sub_4/logo_on.png'"onmouseout="this.src='../images_sub_4/logo.png'"/></a></h1>
+			<nav class="menu">
+				<ul class="amen">
+					<li><a href="../html/sub_1.html">식품소비기한</a></li>
+					<li><a href="../html/sub_2-1.html">식품재활용</a></li>
+					<li><a href="../html/sub_3.html">식품표기제도</a></li>
+					<li class="current"><a href="../html/sub_4.html">수입식품표기법</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js">	</script>
+		<script type="text/javascript">
+			$(function () {
+			    var lastScrollTop = 0,
+			        delta = 15;
+			    $(window).scroll(function (event) {
+			        var st = $(this).scrollTop();
+			        if (Math.abs(lastScrollTop - st) <= delta) return;
+			        if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+			            $("#header_nav").css("top", "-90px");
+			        } else {
+			            $("#header_nav").css("top", "0px");
+			        }
+			        lastScrollTop = st;
+			    });
+			});  
+		</script>
+
+
+		<div id="bg"></div>
+
+		<div>
+			<span id="innerwidth" class="point-in"></span>
+			<span id="innerheight" class="point-in"></span>
+		</div>
+
+	</header>
+	<!-- e: header -->
+	
+	<div id="body_container">
+	    <div class="intro">
+			<h1>수입 식품 표기, 어떻게 읽지?</h1>
+			<p>수입 식품을 살펴보면 한 번에 이해할 수 없는 알파벳 기호들과 숫자들로, <br>
+				국산제품들과는 전혀 다른 표기방식으로 유통기한을 표시하고 있습니다. <br>
+				수입 식품의 기한 표기법을 알고, 안전한 소비생활을 해야합니다.</p>
+		</div>
+
+		<div class="first">
+			<img src="../images_sub_4/first.png" class="first_img">
+			<div class="first_overlay">
+				<div class="first_dimmed">
+					<h1>제조일자</h1>
+				</div>
+			</div>
+			<div class="first_text">
+				<h1>P, PRO, PROD</h1>
+				<span>Product의 약자</span>
+				<p>ex) PRO11FEB19 : 2019년 2월 11일 제조</p>
+			</div>
+		</div>
+
+		<div class="second">
+			<img src="../images_sub_4/second.png" class="second_img">
+			<div class="second_overlay">
+				<div class="second_dimmed">
+					<h1>제조일자</h1>
+				</div>
+			</div>
+			<div class="second_text">
+				<h1>M, MFG, MFD</h1>
+				<span>Manufacture의 약자</span>
+				<p>ex) MFG 05/2019 : 2019년 5월 제조<br>
+					ex) M250519 : 2019년 5월 25일 제조</p>
+			</div>
+		</div>
+
+		<div class="third">
+			<img src="../images_sub_4/third.png" class="third_img">
+			<div class="third_overlay">
+				<div class="third_dimmed">
+					<h1>품질유지기한</h1>
+				</div>
+			</div>
+			<div class="third_text">
+				<h1>B, BE, BBE</h1>
+				<span>Best Before End dates의 약자</span>
+				<p>ex) BBE190719 : 2019년 7월 19일 이내가 최상 품질 유지 기한</p>
+			</div>
+		</div>
+
+		<div class="forth">
+			<img src="../images_sub_4/forth.png" class="forth_img">
+			<div class="forth_overlay">
+				<div class="forth_dimmed">
+					<h1>유통기한</h1>
+				</div>
+			</div>
+			<div class="forth_text">
+				<h1>E, EXP</h1>
+				<span>Expiry date의 약자</span>
+				<p>ex) EXP20190827 : 2019년 8월 27일까지 유통 가능<br>
+					ex) EXP24062019 : 2019년 6월 24일까지 유통 가능</p>
+			</div>
+		</div>
+
+
+	</div>
+
+		<!-- s: footer -->
+	<footer id="footer_nav">
+		<div class="footer_inner">
+			<div class="footer_png">
+				<div class="facebook"><img src="../images_sub_3/facebook.png" onmouseover="this.src='../images_sub_3/facebook_on.png'"onmouseout="this.src='../images_sub_3/facebook.png'"/></div>
+				<div class="insta"><img src="../images_sub_3/insta.png" onmouseover="this.src='../images_sub_3/insta_on.png'"onmouseout="this.src='../images_sub_3/insta.png'"/></div>
+				<div class="twi"><img src="../images_sub_3/twi.png" onmouseover="this.src='../images_sub_3/twi_on.png'"onmouseout="this.src='../images_sub_3/twi.png'"/></div>
+				<div class="in"><img src="../images_sub_3/in.png" onmouseover="this.src='../images_sub_3/in_on.png'"onmouseout="this.src='../images_sub_3/in.png'"/></div> 
+			</div>
+			<p>© UBD, All Rights Reserved</p>
+		</div>
+
+		<div>
+			<span id="innerwidth" class="point-in"></span>
+			<span id="innerheight" class="point-in"></span>
+		</div>
+
+	</footer>
+		<!-- e: footer -->
+
+
+</body>	
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+	<title>sub3_Swiper</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="../dist/css/swiper.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="../css/sub_3.css" />
+
+	<!-- Demo styles -->
+	<style>
+	html, body {
+     position: relative;
+     height: 100%;
+    	}
+     body {
+	     background-image: url("../images_sub_3/bg.png");
+	     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	     font-size: 14px;
+	     color:#000;
+	     margin: 0;
+	     padding: 0;
+     }
+     .swiper-container {
+	     width: 100%;
+	     height: 100%;
+	}
+    .swiper-slide {
+
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+  <body>
+
+    <!-- s: header -->
+
+<header id="header_nav">
+  	<div class="header_inner">
+     	<h1><a href="../html/main.html"><img src="../images_sub_3/logo.png" onmouseover="this.src='../images_sub_3/logo_on.png'"onmouseout="this.src='../images_sub_3/logo.png'"/></a></h1>
+      	<nav class="menu">
+		 	<ul class="amen">
+				<li><a href="../html/sub_1.html" data-hover="Scintilla">식품소비기한</a></li>
+				<li><a href="../html/sub_2-1.html">식품재활용</a></li>
+				<li class="current"><a href="../html/sub_3.html">식품표기제도</a></li>
+				<li><a href="../html/sub_4.html">수입식품표기법</a></li>
+			</ul>
+     	</nav>
+     </div>
+
+     <div>
+	     <span id="innerwidth" class="point-in"></span>
+	     <span id="innerheight" class="point-in"></span>
+     </div>
+</header>
+  <!-- e: header -->
+
+  <!-- Swiper -->
+	<div class="swiper-container">
+	     <div class="swiper-wrapper">
+	     	<div class="swiper-slide">
+
+		<div class="first">
+		     <img class="first_img" src="../images_sub_3/germany.png"/>
+		     <div class="first_text">
+			    <h1>Germany</h1>
+			    <p>독일</p>
+		     </div>
+		     <div class="first_overlay">
+				<div class="first_dimmed">
+				<p>소비기한 Use by Date<br>
+				최소보존일 Date of Minimum durability</p>
+				</div>
+		     </div>
+		</div>
+	</div>
+
+      <div class="swiper-slide">
+	     <div class="second">
+      <img src="../images_sub_3/usa.png" class="second_img"/>
+      <div class="second_text">
+	 <h1>U.S.A</h1>
+	 <p>미국</p>
+      </div>
+      <div class="second_overlay">
+	 <div class="second_dimmed">
+	   <p>소비기한 Use by Date<br>
+	   판매기한 Sell by date<br>
+	   품질유지기한 Best if Use by date </p>
+	 </div>
+      </div>
+    </div>
+      </div>
+
+
+      <div class="swiper-slide">
+	     <div class="third">
+      <img src="../images_sub_3/japan.png" class="third_img"/>
+      <div class="third_text">
+	 <h1>Japan</h1>
+	 <p>일본</p>
+      </div>
+      <div class="third_overlay">
+	 <div class="third_dimmed">
+	   <p>소비기한 Use by Date<br>
+	   상미기한 Best before</p>
+	 </div>
+      </div>
+    </div>
+      </div>
+
+
+      <div class="swiper-slide">
+	   <div class="fourth">
+      <img src="../images_sub_3/aust.png" class="fourth_img"/>
+      <div class="fourth_text">
+	 <h1>Australia</h1>
+	 <p>호주</p>
+      </div>
+      <div class="fourth_overlay">
+		<div class="fourth_dimmed">
+		   <p>포장일자 Date of Packaging<br>
+		   사용기한 Use by Date<br>
+		   최소보존일 Date of Minimum durability</p>
+	 	</div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+	</div>
+
+  <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+	 el: '.swiper-pagination',
+	 clickable: true,
+      },
+    });
+  </script>
+
+  
+
+  <!-- e: footer -->
+<footer id="footer_nav">
+     <div class="footer_png">
+	<div class="facebook"><img src="../images_sub_3/facebook.png" onmouseover="this.src='../images_sub_3/facebook_on.png'"onmouseout="this.src='../images_sub_3/facebook.png'"/></div>
+	<div class="insta"><img src="../images_sub_3/insta.png" onmouseover="this.src='../images_sub_3/insta_on.png'"onmouseout="this.src='../images_sub_3/insta.png'"/></div>
+	<div class="twi"><img src="../images_sub_3/twi.png" onmouseover="this.src='../images_sub_3/twi_on.png'"onmouseout="this.src='../images_sub_3/twi.png'"/></div>
+	<div class="in"><img src="../images_sub_3/in.png" onmouseover="this.src='../images_sub_3/in_on.png'"onmouseout="this.src='../images_sub_3/in.png'"/></div> 
+     </div>
+     <p>© UBD, All Rights Reserved</p>
+
+     <div>
+     	<span id="innerwidth" class="point-in"></span>
+     	<span id="innerheight" class="point-in"></span>
+     </div>
+
+</footer>
+  <!-- e: footer -->
+
+</body>
+
+
+
+</html>

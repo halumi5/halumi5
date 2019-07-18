@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+
+/* reset */
+	html,body {margin:0; padding:0; font-family: 'Noto Sans KR',"맑은 고딕",Dotum,Arial,sans-serif; font-weight:400; font-size:16px; height:100%; color:#666; -webkit-text-size-adjust:none; position:relative; line-height:1.2;}
+	dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote {margin:0; padding:0; -webkit-text-size-adjust:none;}
+	th,td,input,textarea,select {font-size:14px; color:#666; font-family:"맑은 고딕",Dotum,Arial,sans-serif; font-weight:400; -webkit-text-size-adjust:none;}
+	th,td {word-break:break-all; word-wrap:break-word; -webkit-text-size-adjust:none;}
+	table {border-spacing:0; border-collapse:collapse; -webkit-text-size-adjust:none; border:0; table-layout:fixed;}
+	address,caption,cite,code,dfn,var {font-style:normal; font-weight:400; -webkit-text-size-adjust:none;}
+	em {font-style:normal; -webkit-text-size-adjust:none;}
+	ol,ul,li {list-style:none;}
+	h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:700;}
+	abbr,acronym {border:0;}
+	hr,legend,caption {visibility:hidden; overflow:hidden; line-height:0; width:0; height:0; margin:0; padding:0;}
+	img,fieldset {border:0 none;}
+	label {cursor:pointer;}
+	a {color:inherit;}
+	a:link, a:visited, a:hover {color:inherit; text-decoration:none;}
+	a:active {text-decoration:none;}
+	input,img {vertical-align:middle;}
+
+	body{margin: 0px;}
+
+	body {overflow-x:hidden; overflow-y:auto;}
+
+
+#header_nav {position:fixed; left:0; top:0; width:100%; height:90px; z-index: 4;}
+#header_nav h1 {position: absolute; top:35px; left: 190px;}
+#header_nav .menu {position:absolute; right:50px; top:20px; margin-right: 100px; }
+#header_nav .menu li {display:inline-block; vertical-align:middle; margin: 10px;}
+#header_nav .menu a {color:#000; font-size:15px; font-family:'Noto Sans KR'; text-transform: uppercase; line-height: 30px; display:block; padding: 0 10px; box-shadow: #000;}
+#header_nav .menu a:hover {color:#e1574d;}
+#header_nav {
+transition: All 0.2s ease; 
+-webkit-transition: All 0.2s ease;
+-moz-transition: All 0.2s ease;
+-o-transition: All 0.2s ease;
+}
+
+#header_nav .left {position: absolute; font-family: 'Noto Sans KR'; font-size: 15px; }
+
+
+/*body {overflow-x: hidden; overflow-y: auto;}*/
+#body_container {position: relative; width: 100%; height: 1100px; }
+.main {width: 100%; height: 809px; margin: auto; position: fixed;}
+
+.intro h1{font-size: 36px; padding-bottom: 50px; font-weight: 400;}
+.intro p{font-size: 16px; line-height: 28px; font-weight: 400;}
+.intro {left: 370px; margin-top: 128px; margin-bottom: 106px; margin-left: 370px; font-family: 'Noto Sans KR';  color:#000;}
+
+
+.right{position: absolute; left: 370px; top: 730px;}
+
+.example_milk{position: absolute; left: 895px; top: -350px;}
+.example_cheese{position: absolute; left: 750px; top: -250px;}
+.example_yogurt{position: absolute; left: 800px; top: -250px;}
+
+
+
+		/*TAB CSS*/
+
+		ul.tabs {
+			margin-left: 370px;
+			padding: 0;
+			float: left;
+			list-style: none;
+			height: 32px; /*--Set height of tabs--*/
+			/*border-left: 1px solid #999;*/
+			width: 100%;
+			
+		}
+		ul.tabs li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+			line-height: 31px; /*--Vertically aligns the text within the tab--*/
+			/*border: 1px solid #999;*/
+			border-left: none;
+			margin-bottom: -1px; /*--Pull the list item down 1px--*/
+			overflow: hidden;
+			position: relative;
+			/*background: #e0e0e0;*/
+		}
+		ul.tabs li a {
+			text-decoration: none;
+			color: #838383;
+			display: block;
+			font-size: 1.2em;
+			padding: 0 20px;
+			/*--Gives the bevel look with a 1px white border inside the list item--*/
+			border: 1px solid #fff; 
+			outline: none;
+		}
+		ul.tabs li a:hover {
+			background: #f1f1f1;
+			color:#e1574d;
+		}
+		html ul.tabs li.active, html ul.tabs li.active a:hover  {
+			 /*--Makes sure that the active tab does not listen to the hover properties--*/
+			background: #fff;
+			/*--Makes the active tab look like it's connected with its content--*/
+			border-bottom: 1px solid #fff; 
+		}
+
+		/*Tab Conent CSS*/
+		.tab_container {
+			border-top: none;
+			overflow: hidden;
+			clear: both;
+			float: left; 
+			width: 100%;
+			background: #fff;
+		}
+
+		.milk_1 h1{
+			font-family: 'Noto Sans KR';
+			font-size: 36px;
+			color: #000;
+			font-weight: 500;
+		}
+
+		.milk_1 p{
+			font-family: 'Noto Sans KR';
+			font-size: 16px;
+			color: #000;
+			font-weight: 400;
+			line-height: 27px;
+			margin-top: 100px;
+		}
+		.milk_2 h1{
+			font-family: 'Noto Sans KR';
+			font-size: 36px;
+			color: #000;
+			font-weight: bold;
+		}
+
+		.milk_2 p{
+			font-family: 'Noto Sans KR';
+			font-size: 16px;
+			color: #000;
+			font-weight: 400;
+			line-height: 27px;
+			margin-top: 100px;
+		}
+		.milk_3 h1{
+			font-family: 'Noto Sans KR';
+			font-size: 36px;
+			color: #000;
+			font-weight: bold;
+		}
+
+		.milk_3 p{
+			font-family: 'Noto Sans KR';
+			font-size: 16px;
+			color: #000;
+			font-weight: 400;
+			line-height: 27px;
+			margin-top: 100px;
+		}
+		.milk_4 h1{
+			font-family: 'Noto Sans KR';
+			font-size: 36px;
+			color: #000;
+			font-weight: bold;
+		}
+
+		.milk_4 p{
+			font-family: 'Noto Sans KR';
+			font-size: 16px;
+			color: #000;
+			font-weight: 400;
+			line-height: 27px;
+			margin-top: 100px;
+		}
+		.milk {
+			margin-left: 370px;
+			margin-top: 130px;
+		}
+
+		.tab_bottom {
+			margin-left: 370px;
+			margin-top: 80px;
+			display: inline-block;
+			cursor:pointer;
+		}
+
+		.tap_bottom_02 {
+			display: inline-block;
+			cursor:pointer;
+			margin-left: 20px;
+		}
+		.tap_bottom_03 {
+			display: inline-block;
+			cursor:pointer;
+			margin-left: 20px;
+		}
+
+		.example_sik {
+			top: -370px;
+			position: absolute;
+			left: 760px;
+		}
+
+		.example_ketchup{
+			top: -370px;
+			position: absolute;
+			left: 760px;
+
+		}
+
+		.example_ham{
+			top: -370px;
+			position: absolute;
+			left: 760px;
+	
+		}
+		.example_milk{
+			position: absolute; 
+			left: 760px; 
+			top: -370px;}
+
+
+		/*SMALLTAB CSS*/
+
+		ul.smalltab {
+			margin-left: 370px;
+			padding: 0;
+			display: inline-block;
+			float: left;
+			list-style: none;
+			height: 70px; /*--Set height of tabs--*/
+	
+			width: 100%;
+		}
+
+
+		ul.smalltab li {
+
+			float: left;
+			margin: 0;
+			padding: 0;
+			height: 70px; /*--Subtract 1px from the height of the unordered list--*/
+			line-height: 31px; /*--Vertically aligns the text within the tab--*/
+			
+			border-left: none;
+			margin-bottom: -1px; /*--Pull the list item down 1px--*/
+			overflow: hidden;
+			position: relative;
+		}
+		ul.smalltab li a {
+			text-decoration: none;
+			color: #000;
+			display: block;
+			font-size: 1.2em;
+			padding: 0 20px;
+			/*--Gives the bevel look with a 1px white border inside the list item--*/
+			border: 1px solid #fff; 
+			outline: none;
+		}
+		ul.smalltab li a:hover {
+			background: #ccc;
+		}
+		html ul.smalltab li.active, html ul.smalltab li.active a:hover  {
+			 /*--Makes sure that the active tab does not listen to the hover properties--*/
+			background: #fff;
+			/*--Makes the active tab look like it's connected with its content--*/
+			border-bottom: 1px solid #fff; 
+		}
+
+		/*Small Tab Conent CSS*/
+		.smalltab_container {
+			border-top: none;
+			overflow: hidden;
+			clear: both;
+			float: left; 
+			width: 100%;
+			background: #fff;
+		}
+
+		.milk h1{
+			font-family: 'Noto Sans KR';
+			font-size: 36px;
+			color: #000;
+			font-weight: bold;
+		}
+
+		.milk p{
+			font-family: 'Noto Sans KR';
+			font-size: 16px;
+			color: #000;
+			font-weight: 400;
+			line-height: 27px;
+			margin-top: 100px;
+		}
+
+		.milk_1 {
+			margin-left: 370px;
+			margin-top: 130px;
+		}
+		.milk_2 {
+			margin-left: 370px;
+			margin-top: 130px;
+		}
+		.milk_3 {
+			margin-left: 370px;
+			margin-top: 130px;
+		}
+		.milk_4 {
+			margin-left: 370px;
+			margin-top: 130px;
+		}
+
+#footer_nav {position:absolute; left:0; top:1050px; width:100%; height:90px; z-index: 4;  background:#ede6dc;}
+#footer_nav p{position: absolute; color:#000; font-size:13px; font-family:'Noto Sans KR'; text-transform: uppercase; display:inline-block; padding: 0 10px; box-shadow: #000;
+left: 1538px; top: 40px;}
+.footer_png{width: 25px; height: 25px; margin: 0px; display: inline-block; float: left;}
+.facebook {position: absolute; top: 34px; left: 190px;}
+.insta {position: absolute; top: 35px; left: 235px;}
+.twi {position: absolute; top: 36px; left: 295px;}
+.in {position: absolute; top: 35px; left: 350px;}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.amen {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.amen * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.amen li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.amen a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.amen a:before,
+.amen a:after {
+  height: 2px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #e1574d;
+  width: 0;
+}
+
+
+ 
+ 
+.amen a:before {
+  top: 0;
+  left: 0;
+}
+.amen a:after {
+  bottom: 0;
+  right: 0;
+}
+.amen a:hover,
+.amen .current a {
+  color: #ffffff;
+}
+.amen a:hover:before,
+.amen .current a:before,
+.amen a:hover:after,
+.amen .current a:after {
+  width: 100%;
+}
+.bord_line{
+	border: 1px solid red;
+}
+ 
+
+.name_milk{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 417px;
+	margin-top: -50px;
+}
+.name_cheese{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 559px;
+	margin-top: -50px;
+}
+.name_yogurt{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 693px;
+	margin-top: -50px;
+}
+
+.name_sik{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 416px;
+	margin-top: -50px;
+}
+.name_cake{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 551px;
+	margin-top: -50px;
+}
+.name_cream{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 693px;
+	margin-top: -50px;
+}
+
+.name_ketchup{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 415px;
+	margin-top: -50px;
+}
+.name_mayo{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 545px;
+	margin-top: -50px;
+}
+.name_sikcho{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 698px;
+	margin-top: -50px;
+}
+
+.name_ham{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 422px;
+	margin-top: -50px;
+}
+.name_can{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 553px;
+	margin-top: -50px;
+}
+.name_sam{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 694px;
+	margin-top: -50px;
+}
